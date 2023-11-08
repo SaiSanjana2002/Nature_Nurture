@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url("https://img.freepik.com/free-photo/sunny-meadow-landscape_1112-134.jpg?w=1060&t=st=1699348178~exp=1699348778~hmac=71da875b36ee5c37912d19d07ccbac63488c28ab9ef547dc476eb432a8b88656") no-repeat;
+            height: 100vh;
+            background-size: cover;
+            background-position: center ;
+   
+  }
+  .header {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(35, 183, 233);
+    display: flex;
+    width:100%;
+    .b{
+      margin-top: 14px;
+      margin-left :20px;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 30px;
+    }
+    .c{
+      margin-left: 30px;
+      margin-top: 15px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      
+    }
+    .d{
+      margin-left: 900px;
+      margin-top: 14px;
+    }
+    .e{
+      margin-left: 220px;
+      margin-top: 14px;
+      float: right;
+    }
+  }
+  
+  #filter-category {
+    position: absolute;
+    display: flex;
+    font-size: 18px;
+    padding: 5px;
+    font-weight: bold;
+  }
+
+  .logo {
+    vertical-align: middle;
+    padding-right: 1px;
+    text-align: start;
+    font-size: 100%;
+    white-space: nowrap;
+    display: flex;
+  }  
+  button {
+    font-size: 18px;
+    display: flex;
+    position: absolute;
+    padding: 5px;
+  }
+  a:link {
+    color: red;
+  }
+  a:visited {
+    color: green;
+  }
+  
+  a:hover {
+    color: hotpink;
+  }
+  
+  a:active {
+    color: blue;
+  }
+  .footer {
+    background-color: rgba(12, 12, 12, 0.956);
+    padding: 10px;
+    text-align: center;
+  }
+  .a1{
+    display: inline;
+    display: flex;
+    justify-content: center;
+    .csstext1 {
+      color: rgba(77, 5, 9, 0.947);
+     
+      background-color:rgb(0, 255, 162);
+      float: left;
+      width: 10%;
+      margin-left: 5px;
+      padding: 4px;
+    }
+    .txt1{
+      float:right;
+    
+      background-color: bisque;
+      margin-left: 10px;
+      width:50%;
+      padding:4px;
+    }  
+}
+.a2{
+  display: inline;
+  display: flex;
+  justify-content: center;
+  .text2 {
+    color: rgba(77, 5, 9, 0.947);
+    
+    background-color:rgb(0, 255, 162);
+    float: left;
+    width: 10%;
+    margin-left: 5px;
+    padding: 4px;
+  }
+  .t2{
+    float:right;
+    
+    background-color: bisque;
+    margin-left: 10px;
+    width:50%;
+    padding:4px;
+  }  
+}
+
+
+  .main{
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    colour:rgb(255,255,255);
+  }
+  .mnext{
+    text-align: center;
+    width:fit-content;
+    font-size: 16px;
+    colour:rgb(255,255,255);
+  }
+  #foot {
+    font-size: 19px;
+    font-family: "Times New Roman", Times, serif;
+    display: inline;
+  }
+
+
+
+
+
+  
+
+

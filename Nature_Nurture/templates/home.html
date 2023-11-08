@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+  <head>
+    
+    <title>Nature Nurture</title>
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='Logo.jpg')}}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="header">
+      <span class="a"><a href="/" title="Nature Nurture">
+        <img
+          class="logo" src="{{url_for('static', filename='Logo.jpg')}}"
+          alt="Logo" style="height: 65px; width: 65px"/>
+      </a></span>
+      <span class="b"><b>Nature Nurture</b></span>
+
+      <span class="c">
+        <a href= "/Product"> <button style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 20px; background-color: rgb(252, 252, 252); border: 0px;"><b>Product</b></button></a>
+      </span>
+
+      <span class="d">
+        <select id="filter-category" onchange="redirectToPage()" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+          <option id="all" value="all" >Services</option>
+          <option value="smc" style="font-family: Georgia, 'Times New Roman', Times, serif;">Suggest MY Crop</option>
+          <option value="cmc" style="font-family: Georgia, 'Times New Roman', Times, serif;"> Precautions </option>
+        </select>
+        
+      </span>
+    </div>
+
+    <script>
+      function redirectToPage() {
+        var selectedValue = document.getElementById("filter-category").value;
+        if (selectedValue == "smc") {
+          window.location.href = "/predict";
+        } else if (selectedValue == "cmc") {
+          window.location.href = "/predictc";
+        }
+      }
+      </script>
+
+    <div class="gfg" style="text-align: center;">
+      <img
+        src="{{url_for('static', filename='Logo.jpg')}}"
+        alt="logo image"
+        height="350px"
+        width="35%"
+      /></div>
+      <div style="width: 100%; margin: 0 auto; font-size: 20px">
+        <b class="main"><h1>Welcome to Nature Nurture</h1></b>
+      </div>
+      <div class="mnext">
+        <br />
+
+        <br />Nature Nurture is dedicated to revolutionizing agriculture through quality, consistency, and innovation. By offering
+        tailored advice based on soil data, we guide farmers in crop selection and fertilizer usage. Our mission is to
+        facilitate direct trade of premium organic produce, eliminating the need for middlemen and connecting Indian farmers
+        directly with purchasers.<br>
+      </div>
+
+        <br />
+        <div class="a1"><span class="csstext1"><b>Discover the Ideal crop for your field</b></span>
+        <span class="txt1">
+        At
+        Nature Nurture our experts analyze the soil powered by a
+        predefined machine learning model. We provide farmers crop recommendations and guidance to the farmers based on analysis
+        to help them
+        attain higher yields without suffering losses.</span></div>
+
+        <br />
+        <div class="a2">
+        <span class="text2"><b class="csstext">Maximize Profits, Minimize Costs</b><br /></span>
+
+        <span class="t2">Get your crop trade transformed at Nature Nurture! Simple, Straightforward, and Economical Deals for Cultivators and Purchasers.
+        No Middlemen, No Additional Fees!<br /></span>
+
+        </div>
+        <br /><p style="text-align: center; font-size: 35px; font-family: Georgia, 'Times New Roman', Times, serif;"><b>Empower, Educate, Elevate!</b></p><br />
+      <br><br><br><br><br>
+
+    <div class="footer">
+      <p id="foot"><a href="/">Home</a></p>
+      <br />
+      <p id="foot"><a href="/About">About Us</a></p>
+      <br />
+      <p id="foot"><a href="/Contact">Contact Us</a></p>
+      <br />
+      <p><FONT COLOR=red>&copy; 2023 Nature Nurture</p>
+    </div>
+  </body>
+</html>
